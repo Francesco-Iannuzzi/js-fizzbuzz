@@ -43,7 +43,7 @@ Strumenti:
 */
 
 //creare un container nell'index.html e salvarlo nello script in una variante
-const containerEl = document.querySelector('.container');
+const rowElement = document.querySelector('.row');
 
 //creare un ciclo di numeri che va da 1 a 100 e stamparli in console
 for (let i = 1; i <= 100; i++) {
@@ -52,30 +52,31 @@ for (let i = 1; i <= 100; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log('FizzBuzz');
         //stampare in dom in ordine i vari numeri e stringhe
-        const liElement = `<li>FizzBuzz</li>`
-        containerEl.innerHTML += liElement
+        const divElement = `<div class="col-2">FizzBuzz</div>`;
+        rowElement.innerHTML += divElement;
 
         //verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
     } else if (i % 5 === 0) {
         console.log('Buzz');
         //stampare in dom in ordine i vari numeri e stringhe
-        const liElement = `<li>Buzz</li>`;
-        containerEl.innerHTML += liElement;
+        const divElement = `<div class="col-2">Buzz</div>`;
+        rowElement.innerHTML += divElement;
 
         //verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
     } else if (i % 3 === 0) {
         console.log('Fizz');
         //stampare in dom in ordine i vari numeri e stringhe
-        const liElement = `<li>Fizz</li>`;
-        containerEl.innerHTML += liElement;
+        const divElement = `<div class="col-2">Fizz</div>`;
+        rowElement.innerHTML += divElement;
 
         //altrimenti stampare semplicemente il numero
     } else {
         console.log(i);
         //stampare in dom in ordine i vari numeri e stringhe
-        const liElement = `<li>${i}</li>`;
-        containerEl.innerHTML += liElement
+        const divElement = `<div class="col-2">${i}</div>`;
+        rowElement.innerHTML += divElement;
     }
+
 
 }
 
