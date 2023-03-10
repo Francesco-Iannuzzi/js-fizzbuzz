@@ -42,6 +42,7 @@ Strumenti:
 - `append()` / `innerHTML` / `insertAdjacentHTML`
 */
 
+const containerEl = document.querySelector('.container');
 
 //creare un ciclo di numeri che va da 1 a 100 e stamparli in console
 for (let i = 1; i <= 100; i++) {
@@ -52,15 +53,26 @@ for (let i = 1; i <= 100; i++) {
     //altrimenti stampare semplicemente il numero
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log('FizzBuzz');
+        const liElement = `<li>FizzBuzz</li>`
+        containerEl.innerHTML += liElement
 
     } else if (i % 5 === 0) {
         console.log('Buzz');
+        const liElement = `<li>Buzz</li>`;
+        containerEl.innerHTML += liElement;
 
     } else if (i % 3 === 0) {
         console.log('Fizz');
+        const liElement = `<li>Fizz</li>`;
+        containerEl.innerHTML += liElement;
+
     } else {
         console.log(i);
+        const liElement = `<li>${i}</li>`;
+        containerEl.innerHTML += liElement
     }
+
+     
 
 }
 
