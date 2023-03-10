@@ -53,9 +53,11 @@ for (let i = 1; i <= 100; i++) {
         console.log('FizzBuzz');
         //stampare in dom in ordine i vari numeri e stringhe
         let colElement = document.createElement('div');
-        colElement.classList.add('col-2', 'my_bg_fizzbuzz', 'square');
-        colElement.innerHTML = `FizzBuzz`,
+        colElement.innerHTML = `FizzBuzz`;
         rowElement.append(colElement);
+
+        //assegnare delle classi che stilizzino i vari elementi
+        colElement.classList.add('col-2', 'my_bg_fizzbuzz', 'square');
         
 
         //verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
@@ -63,30 +65,36 @@ for (let i = 1; i <= 100; i++) {
         console.log('Buzz');
         //stampare in dom in ordine i vari numeri e stringhe
         const colElement = document.createElement('div');
-        colElement.classList.add('col-2', 'my_bg_buzz', 'square');
-        colElement.innerHTML = `Buzz`,
+        colElement.innerHTML = `Buzz`;
         rowElement.append(colElement);
+
+        //assegnare delle classi che stilizzino i vari elementi
+        colElement.classList.add('col-2', 'my_bg_buzz', 'square');
+        
 
         //verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
     } else if (i % 3 === 0) {
         console.log('Fizz');
         //stampare in dom in ordine i vari numeri e stringhe
         const colElement = document.createElement('div');
-        colElement.classList.add('col-2', 'my_bg_fizz', 'square');
-        colElement.innerHTML = `Fizz`,
+        colElement.innerHTML = `Fizz`;
         rowElement.append(colElement);
+
+        //assegnare delle classi che stilizzino i vari elementi
+        colElement.classList.add('col-2', 'my_bg_fizz', 'square');
+        
 
         //altrimenti stampare semplicemente il numero
     } else {
         console.log(i);
         //stampare in dom in ordine i vari numeri e stringhe
         const colElement = document.createElement('div');
-        colElement.classList.add('col-2', 'my_bg_number', 'square');
-        colElement.innerHTML = `${i}`,
+        colElement.innerHTML = `${i}`;
         rowElement.append(colElement);
-         
+
+        //assegnare delle classi che stilizzino i vari elementi
+        colElement.classList.add('col-2', 'my_bg_number', 'square');
+   
     }
 
 }
-
-//assegnare delle classi che stilizzino i vari elementi
