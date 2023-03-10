@@ -39,7 +39,7 @@ Strumenti:
 - operator %
 - operator &&
 - getElementById / querySelector
-- `append()` / `innerHTML` / `insertAdjacentHTML`
+- `append()` / `innerHTML` / `insertAdjacentHTML` / createElement
 */
 
 //creare un container nell'index.html e salvarlo nello script in una variante
