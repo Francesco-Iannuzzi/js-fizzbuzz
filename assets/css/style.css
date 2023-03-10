@@ -13,20 +13,25 @@
 
 .my_bg_number
 {
-    background-color: var(--my-fizz);
+    background-color: var(--my-number);
 }
 
 .my_bg_fizz
 {
-    background-color: var(--my-buzz);
+    background-color: var(--my-fizz);
 }
 
 .my_bg_buzz
 {
-    background-color: var(--my-fizzbuzz);
+    background-color: var(--my-buzz);
 }
 
 .my_bg_fizzbuzz
 {
     background-color: var(--my-fizzbuzz);
+}
+
+.square
+{
+    aspect-ratio: 1;
 }
