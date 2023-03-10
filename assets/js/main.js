@@ -44,11 +44,27 @@ Strumenti:
 
 
 //creare un ciclo di numeri che va da 1 a 100 e stamparli in console
+for (let i = 1; i <= 100; i++) {
 
-//verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
-//verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
-//verificare se il numero sia un multiplo di 3 che di 5 usando gli operatori % e && e stampare al suo posto la stringa 'FizzBuzz'
+    //verificare se il numero è sia un multiplo di 3 che di 5 usando gli operatori % e && e stampare al suo posto la stringa 'FizzBuzz'
+    //verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
+    //verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
+    //altrimenti stampare semplicemente il numero
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log('FizzBuzz');
 
-//creare un container nell'index.html e stamparci dentro il in ordine i vari numeri e stringhe
+    } else if (i % 5 === 0) {
+        console.log('Buzz');
+
+    } else if (i % 3 === 0) {
+        console.log('Fizz');
+    } else {
+        console.log(i);
+    }
+
+}
+
+
+//creare un container nell'index.html e stamparci dentro in ordine i vari numeri e stringhe
 
 //assegnare delle classi che stilizzino i vari elementi
