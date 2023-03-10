@@ -29,8 +29,26 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 */
 
+
 /*
 
 Strumenti:
-
+- const / let
+- for
+- if /else
+- operator %
+- operator &&
+- getElementById / querySelector
+- `append()` / `innerHTML` / `insertAdjacentHTML`
 */
+
+
+//creare un ciclo di numeri che va da 1 a 100 e stamparli in console
+
+//verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
+//verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
+//verificare se il numero sia un multiplo di 3 che di 5 usando gli operatori % e && e stampare al suo posto la stringa 'FizzBuzz'
+
+//creare un container nell'index.html e stamparci dentro il in ordine i vari numeri e stringhe
+
+//assegnare delle classi che stilizzino i vari elementi
