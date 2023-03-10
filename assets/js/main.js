@@ -42,41 +42,41 @@ Strumenti:
 - `append()` / `innerHTML` / `insertAdjacentHTML`
 */
 
+//creare un container nell'index.html e salvarlo nello script in una variante
 const containerEl = document.querySelector('.container');
 
 //creare un ciclo di numeri che va da 1 a 100 e stamparli in console
 for (let i = 1; i <= 100; i++) {
 
-    //verificare se il numero è sia un multiplo di 3 che di 5 usando gli operatori % e && e stampare al suo posto la stringa 'FizzBuzz'
-    //verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
-    //verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
-    //altrimenti stampare semplicemente il numero
+        //verificare se il numero è sia un multiplo di 3 che di 5 usando gli operatori % e && e stampare al suo posto la stringa 'FizzBuzz'
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log('FizzBuzz');
+        //stampare in dom in ordine i vari numeri e stringhe
         const liElement = `<li>FizzBuzz</li>`
         containerEl.innerHTML += liElement
 
+        //verificare se il numero è un multiplo di 5 usando l'operatore % e stampare al suo posto la stringa 'Buzz'
     } else if (i % 5 === 0) {
         console.log('Buzz');
+        //stampare in dom in ordine i vari numeri e stringhe
         const liElement = `<li>Buzz</li>`;
         containerEl.innerHTML += liElement;
 
+        //verificare se il numero è un multiplo di 3 usando l'operatore % e stampare al suo posto la stringa 'Fizz'
     } else if (i % 3 === 0) {
         console.log('Fizz');
+        //stampare in dom in ordine i vari numeri e stringhe
         const liElement = `<li>Fizz</li>`;
         containerEl.innerHTML += liElement;
 
+        //altrimenti stampare semplicemente il numero
     } else {
         console.log(i);
+        //stampare in dom in ordine i vari numeri e stringhe
         const liElement = `<li>${i}</li>`;
         containerEl.innerHTML += liElement
     }
 
-     
-
 }
-
-
-//creare un container nell'index.html e stamparci dentro in ordine i vari numeri e stringhe
 
 //assegnare delle classi che stilizzino i vari elementi
