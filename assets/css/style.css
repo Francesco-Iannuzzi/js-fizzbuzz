@@ -5,3 +5,28 @@
     --my-buzz: #ffd166;
     --my-fizzbuzz: #f0466f;
 }
+
+.my_bg_back
+{
+    background-color: var(--my-back);
+}
+
+.my_bg_number
+{
+    background-color: var(--my-fizz);
+}
+
+.my_bg_fizz
+{
+    background-color: var(--my-buzz);
+}
+
+.my_bg_buzz
+{
+    background-color: var(--my-fizzbuzz);
+}
+
+.my_bg_fizzbuzz
+{
+    background-color: var(--my-fizzbuzz);
+}
