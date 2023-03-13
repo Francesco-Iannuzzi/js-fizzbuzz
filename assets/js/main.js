@@ -52,7 +52,7 @@ for (let i = 1; i <= 100; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log('FizzBuzz');
         //stampare in dom in ordine i vari numeri e stringhe
-        let colElement = document.createElement('div');
+        const colElement = document.createElement('div');
         colElement.innerHTML = `FizzBuzz`;
         rowElement.append(colElement);
 
